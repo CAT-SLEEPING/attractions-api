@@ -13,7 +13,6 @@ const pool = mysql.createPool({
 
 var app = express()
 
-
 app.use(cors())
 app.get('/helloworld', function(req, res, next){
     res.json({msg: 'helloworld'})
